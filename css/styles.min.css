@@ -929,30 +929,52 @@ div.timer {
 
 #days span,
 #hours span,
-#minutes span{
-  display: inline-block;
+#minutes span,
+#seconds span {
+  display: block;
   font-size: 20px;
-  margin-right: 10px;
- 
+  /* margin-right: 10px; */
+  text-align: center;
+  color: #fff;
+  font-weight: normal !important;
+}
+
+.tm {
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    min-width: 120px;
+    text-align: center;
+    font-weight: 600;
 }
 
 #days {
   font-size: 50px;
-  color: #db4844;
+  color: #183059;
+ 
+  background: #ef2f3c;
 }
 #hours {
   font-size: 50px;
-  color: #f07c22;
+  color: #183059;
+
+  background: #e1218a; 
+ 
 }
 #minutes {
   font-size: 50px;
-  color: #f6da74;
+  color: #183059;
+  
+  background: #276fbf;
 }
 #seconds {
-  font-size: 30px;
-  color: #abcd58;
+  font-size: 50px;
+  color: #183059;
+ 
+  background: #f0a200;
 }
 
 #seconds span {
-    font-size: 20px;
+  display: block;
+  font-size: 20px;
 }
