@@ -940,41 +940,64 @@ div.timer {
 }
 
 .tm {
-    padding: 20px;
-    border-radius: 5px;
-    margin: 0px 5px;
-    min-width: 120px;
-    text-align: center;
-    font-weight: 600;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 600;
 }
 
 #days {
   font-size: 50px;
   color: #183059;
- 
+
   background: #ef2f3c;
 }
 #hours {
   font-size: 50px;
   color: #183059;
 
-  background: #e1218a; 
- 
+  background: #e1218a;
 }
 #minutes {
   font-size: 50px;
   color: #183059;
-  
+
   background: #276fbf;
 }
 #seconds {
   font-size: 50px;
   color: #183059;
- 
+
   background: #f0a200;
 }
 
 #seconds span {
   display: block;
   font-size: 20px;
+}
+
+.pswBtn {
+  /* border-radius: 0px !important;
+  -webkit-border-radius: 0px !important; */
+  /* margin-left: 10px; */
+  /* border: 0px !important; */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  position: relative;
+  top: -2px;
+}
+
+.pwdInput {
+  display: flex;
+}
+
+.input-group-append {
+  margin-left: -4px;
 }

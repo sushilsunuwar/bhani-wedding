@@ -240,6 +240,31 @@
 
 </section>
 
+<div class="modal fade" id="initModal" tabindex="-1" role="dialog"  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3 pwdInput">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary pswBtn" type="button">Submit</button>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <section id="instagram" class="section-padding">
     <div class="container">
         <div class="row">
@@ -506,6 +531,13 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+</script>
+
+<script src="https://secure.ewaypayments.com/scripts/eCrypt.js"
+   class="eway-paynow-button"
+   data-publicapikey="epk-FCCEAE14-F9F2-4821-956F-46AACD0C02E6"
+   data-amount="1000"
+   data-currency="AUD" >
 </script>
 </body>
 </html>
