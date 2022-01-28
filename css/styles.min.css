@@ -126,6 +126,7 @@ body {
   font-weight: 300;
   color: rgba(28, 54, 83, 0.6);
   -webkit-text-size-adjust: 100%;
+  background-color: #fae1dd;
 }
 *:focus {
   outline: none !important;
@@ -849,7 +850,7 @@ header .member-actions {
 }
 .rsvp .rsvp-form .form-input-group i.fa-user,
 .rsvp .rsvp-form .form-input-group i.fa-users,
-.rsvp .rsvp-form .form-input-group i.fa-envelope,
+.rsvp .rsvp-form .form-input-group i.fa-phone,
 .rsvp .rsvp-form .form-input-group .fa-key {
   font-size: 14px;
   position: absolute;
@@ -952,30 +953,47 @@ div.timer {
   font-size: 50px;
   color: #183059;
 
-  background: #ef2f3c;
+  background: #fec5bb;
 }
 #hours {
   font-size: 50px;
   color: #183059;
 
-  background: #e1218a;
+  background: #fcd5ce;
 }
 #minutes {
   font-size: 50px;
   color: #183059;
 
-  background: #276fbf;
+  background: #ffd7ba;
 }
 #seconds {
   font-size: 50px;
   color: #183059;
 
-  background: #f0a200;
+  background: #fec89a;
 }
 
 #seconds span {
   display: block;
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .tm {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    min-width: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px !important;
+  }
+}
+
+.hwm_pics {
+  display: flex;
+  justify-content: center;
 }
 
 .pswBtn {

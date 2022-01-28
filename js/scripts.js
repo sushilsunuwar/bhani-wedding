@@ -37,8 +37,8 @@ $(document).ready(function () {
 
     $("#days").html(days + "<span>Days</span>");
     $("#hours").html(hours + "<span>Hours</span>");
-    $("#minutes").html(minutes + "<span>Minutes</span>");
-    $("#seconds").html(seconds + "<span>Seconds</span>");
+    $("#minutes").html(minutes + "<span>Mins</span>");
+    $("#seconds").html(seconds + "<span>Secs</span>");
   }
 
   setInterval(function () {
