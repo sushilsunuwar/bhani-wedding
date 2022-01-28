@@ -610,10 +610,31 @@ header .member-actions {
   padding-left: 100px;
 }
 .events .time {
+  margin-left: 10px;
   font-size: 13px;
-  font-style: italic;
-  text-transform: lowercase;
+  /* font-style: italic; */
+  /* text-transform: lowercase; */
   color: rgba(28, 54, 83, 0.6);
+}
+
+.event_wrap {
+  height: 200px;
+  width: 200px;
+  background: #d8e2dc;
+  text-align: center;
+  border-radius: 50%;
+  justify-content: center;
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  display: flex;
+  margin: 10px auto;
+}
+
+.events p {
+  padding-bottom: 0px !important;
 }
 .blog {
   padding-bottom: 120px;
