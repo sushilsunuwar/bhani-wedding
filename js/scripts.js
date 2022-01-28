@@ -11,6 +11,13 @@ $(document).ready(function () {
   function makeTimer() {
     //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
     var endTime = new Date("05 Feburary 2022 9:56:00 GMT+01:00");
+    if(new Date() > endTime) {
+      $("#days").html(00 + "<span>Days</span>");
+      $("#hours").html(00 + "<span>Hours</span>");
+      $("#minutes").html(00 + "<span>Mins</span>");
+      $("#seconds").html(00 + "<span>Secs</span>");
+      return;
+    }
     endTime = Date.parse(endTime) / 1000;
 
     var now = new Date();
