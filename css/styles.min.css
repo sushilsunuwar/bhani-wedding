@@ -991,6 +991,12 @@ div.timer {
   }
 }
 
+@media (max-width: 991px) {
+  .hwm_pics {
+    display: block !important;
+  }
+}
+
 .hwm_pics {
   display: flex;
   justify-content: center;
