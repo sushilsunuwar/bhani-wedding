@@ -420,6 +420,9 @@ section .header {
   width: 100%;
   z-index: 999;
 }
+.pp{
+  padding-bottom: 10px !important;
+}
 .fixed {
   position: fixed;
   /* background-color: rgba(55, 36, 40, 0.88); */
