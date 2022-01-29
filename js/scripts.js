@@ -11,7 +11,7 @@ $(document).ready(function () {
   function makeTimer() {
     //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
     var endTime = new Date("05 Feburary 2022 9:56:00 GMT+01:00");
-    if(new Date() > endTime) {
+    if (new Date() > endTime) {
       $("#days").html(00 + "<span>Days</span>");
       $("#hours").html(00 + "<span>Hours</span>");
       $("#minutes").html(00 + "<span>Mins</span>");
@@ -272,17 +272,17 @@ $(document).ready(function () {
     },
     data: {
       // Event title
-      title: "Ram and Antara's Wedding",
+      title: "Bhawana and Animesh's Wedding",
 
       // Event start date
-      start: new Date("Nov 27, 2017 10:00"),
+      start: new Date("Feb 05, 2017 10:00"),
 
       // Event duration (IN MINUTES)
       // duration: 120,
 
       // You can also choose to set an end time
       // If an end time is set, this will take precedence over duration
-      end: new Date("Nov 29, 2017 00:00"),
+      end: new Date("Feb 07, 2022 00:00"),
 
       // Event Address
       address: "ITC Fortune Park Hotel, Kolkata",
@@ -319,7 +319,7 @@ $(document).ready(function () {
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec",
+        "https://script.google.com/macros/s/AKfycbzzSWIjzJY_OhTy6-Eni2yPNj960BpqudJhc5b9UDnX3sKCuTQrwhBGjeNixiUFTmfG/exec",
         data
       )
         .done(function (data) {
@@ -341,6 +341,20 @@ $(document).ready(function () {
           );
         });
     }
+  });
+
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxGXt2Ds7l0BCvK7exKZuAsYvQOzguiOaaF5-V5ka08gtADynG9P-6NufQKts8uwr4Gvg/exec";
+  const form = document.forms["google-sheet"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(
+        (response) => console.log(response),
+        alert("Thanks for Contacting us..! We Will Contact You Soon...")
+      )
+      .catch((error) => console.error("Error!", error.message));
   });
 });
 
