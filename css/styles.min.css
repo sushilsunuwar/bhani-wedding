@@ -54,7 +54,7 @@ h5 {
   -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
-  border-color: #fff;
+  border-color: #000;
 }
 .btn-white:hover,
 .btn-white:focus {
@@ -380,9 +380,11 @@ section .header {
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, 0.88);
+  /* background-color: rgba(55, 36, 40, 0.88); */
   z-index: 999;
   width: 100%;
+  background-color: #ffe5d9;
+  opacity: 0.88;
 }
 header {
   padding: 50px 0;
@@ -414,7 +416,8 @@ header ul.primary-nav li {
   display: inline;
 }
 header ul.primary-nav li a {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -427,7 +430,8 @@ header ul.member-actions li {
   display: inline;
 }
 header ul.member-actions li a {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 header ul.member-actions li a:hover {
   color: #e8ca6f;
