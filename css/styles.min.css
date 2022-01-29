@@ -56,6 +56,30 @@ h5 {
 .modal-body {
   /* background-color: #fae1dd; */
 }
+
+.rcpt_modal {
+  padding: 0px !important;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.rcpt_modal button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: white;
+  width: 25px;
+  height: 25px;
+  /* padding: 20px; */
+  border-radius: 50%;
+  opacity: 0.8
+}
+
+.rcpt_modal button span{
+  font-size: 25px;
+}
 .btn-white {
   font-size: 13px;
   border: solid 2px;
@@ -67,6 +91,7 @@ h5 {
 }
 .rcpt_wrapper img{
   width: 100%;
+  border-radius: 20px;
 }
 
 .btn-white:hover,
