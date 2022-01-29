@@ -917,7 +917,6 @@ header .member-actions {
 .rsvp {
   padding-bottom: 140px;
 }
-
 .rsp-black {
   color: #0c345d !important;
 }
@@ -926,7 +925,6 @@ header .member-actions {
   border-radius: 3px;
   width: 100%;
   font-size: 13px;
-  border-color: #000 !important;
 }
 .rsvp .rsvp-form .form-input-group {
   width: 100%;
