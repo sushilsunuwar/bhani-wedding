@@ -61,6 +61,10 @@ h5 {
   display: inline-block;
   /* border-color: #000; */
 }
+.rcpt_wrapper img{
+  width: 100%;
+}
+
 .btn-white:hover,
 .btn-white:focus {
   color: #e8ca6f;

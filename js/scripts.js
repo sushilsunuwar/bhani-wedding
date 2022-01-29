@@ -2,11 +2,11 @@ $(document).ready(function () {
   $(window).on("load", function () {
     // $('#dc-modal').modal('show');
 
-    // $("#initModal").modal({
-    //   backdrop: "static",
-    //   keyboard: false,
-    //   show: true,
-    // });
+    $("#initModal").modal({
+      backdrop: "static",
+      keyboard: false,
+      show: true,
+    });
   });
   function makeTimer() {
     //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
