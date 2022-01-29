@@ -53,6 +53,9 @@ h5 {
   background-color: #e8ca6f;
 }
 
+.modal-dialog {
+  top: 10% !important;
+}
 .modal-body {
   /* background-color: #fae1dd; */
 }
@@ -308,9 +311,10 @@ section .header {
 }
 .header-nav.open {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  background: #ffe5d9;
 }
 .nav-toggle {
   position: absolute;
@@ -454,8 +458,8 @@ header ul.primary-nav li {
   display: inline;
 }
 header ul.primary-nav li a {
-  color: #fff;
-  /* color: #000; */
+  /* color: #fff; */
+  color: #0c345d;
   padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -468,8 +472,9 @@ header ul.member-actions li {
   display: inline;
 }
 header ul.member-actions li a {
-  color: #fff;
- /
+  /* color: #fff; */
+  color: #0c345d;
+ 
 }
 header ul.member-actions li a:hover {
   color: #e8ca6f;
