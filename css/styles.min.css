@@ -421,8 +421,8 @@ header ul.primary-nav li {
   display: inline;
 }
 header ul.primary-nav li a {
-  /* color: #fff; */
-  color: #000;
+  color: #fff;
+  /* color: #000; */
   padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -435,8 +435,8 @@ header ul.member-actions li {
   display: inline;
 }
 header ul.member-actions li a {
-  /* color: #fff; */
-  color: #000;
+  color: #fff;
+ /
 }
 header ul.member-actions li a:hover {
   color: #e8ca6f;
@@ -914,6 +914,11 @@ header .member-actions {
 .pointer-events-auto {
   pointer-events: auto;
 }
+
+.einvitation {
+  text-align: center;
+  padding: 10px;
+}
 .rsvp {
   padding-bottom: 140px;
 }
@@ -1091,6 +1096,10 @@ div.timer {
     text-align: center;
     font-weight: 600;
     font-size: 30px !important;
+  }
+  .einvitation iframe  {
+    width: 100% !important;
+    height: 250px !important;
   }
 }
 
