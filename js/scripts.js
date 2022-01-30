@@ -166,7 +166,7 @@ $(document).ready(function () {
   $(function () {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-console.log(scroll)
+      console.log(scroll);
       if (scroll >= 20) {
         $("section.navigation").addClass("fixed");
         $("header").css({
@@ -362,13 +362,13 @@ console.log(scroll)
 
 // Google map
 function initMap() {
-  var location = { lat: 22.5932759, lng: 88.27027720000001 };
+  var location = { lat: 27.7005975, lng: 85.2888173 };
   var map = new google.maps.Map(document.getElementById("map-canvas"), {
     zoom: 15,
     center: location,
     scrollwheel: false,
   });
-
+ 
   var marker = new google.maps.Marker({
     position: location,
     map: map,
@@ -376,7 +376,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-  var la_fiesta = { lat: 20.305826, lng: 85.85480189999998 };
+  var la_fiesta = { lat: 48.8583, lng: 2.2923 };
   var map = new google.maps.Map(document.getElementById("map-canvas"), {
     zoom: 15,
     center: la_fiesta,
