@@ -364,7 +364,7 @@ $(document).ready(function () {
 function initMap() {
   var location = { lat: 27.7005975, lng: 85.2888173 };
   var map = new google.maps.Map(document.getElementById("map-canvas"), {
-    zoom: 15,
+    zoom: 25,
     center: location,
     scrollwheel: false,
   });
@@ -375,19 +375,19 @@ function initMap() {
   });
 }
 
-function initBBSRMap() {
-  var la_fiesta = { lat: 48.8583, lng: 2.2923 };
-  var map = new google.maps.Map(document.getElementById("map-canvas"), {
-    zoom: 15,
-    center: la_fiesta,
-    scrollwheel: false,
-  });
+// function initBBSRMap() {
+//   var la_fiesta = { lat: 48.8583, lng: 2.2923 };
+//   var map = new google.maps.Map(document.getElementById("map-canvas"), {
+//     zoom: 15,
+//     center: la_fiesta,
+//     scrollwheel: false,
+//   });
 
-  var marker = new google.maps.Marker({
-    position: la_fiesta,
-    map: map,
-  });
-}
+//   var marker = new google.maps.Marker({
+//     position: la_fiesta,
+//     map: map,
+//   });
+// }
 
 // alert_markup
 function alert_markup(alert_type, msg) {

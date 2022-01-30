@@ -68,7 +68,7 @@ h5 {
   border-radius: 20px;
 }
 
-.rcpt_modal button{
+.rcpt_modal button {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -77,10 +77,10 @@ h5 {
   height: 25px;
   /* padding: 20px; */
   border-radius: 50%;
-  opacity: 0.8
+  opacity: 0.8;
 }
 
-.rcpt_modal button span{
+.rcpt_modal button span {
   font-size: 25px;
 }
 .btn-white {
@@ -92,7 +92,7 @@ h5 {
   display: inline-block;
   /* border-color: #000; */
 }
-.rcpt_wrapper img{
+.rcpt_wrapper img {
   width: 100%;
   border-radius: 20px;
 }
@@ -420,7 +420,7 @@ section .header {
   width: 100%;
   z-index: 999;
 }
-.pp{
+.pp {
   padding-bottom: 10px !important;
 }
 .fixed {
@@ -477,7 +477,6 @@ header ul.member-actions li {
 header ul.member-actions li a {
   /* color: #fff; */
   color: #0c345d;
- 
 }
 header ul.member-actions li a:hover {
   color: #e8ca6f;
@@ -1044,9 +1043,15 @@ footer .to-top-wrapper {
   border: 1px solid #e6e9ea;
   background: #fff;
 }
+
+.rect {
+  margin-bottom: 20px;
+  color: #3d4351;
+  text-transform: capitalize;
+}
 footer .to-top-wrapper .to-top {
   display: block;
-  -webkit-transition: all 0.3s ease-in-out  ;
+  -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1139,7 +1144,7 @@ div.timer {
     font-weight: 600;
     font-size: 30px !important;
   }
-  .einvitation iframe  {
+  .einvitation iframe {
     width: 100% !important;
     height: 250px !important;
   }
