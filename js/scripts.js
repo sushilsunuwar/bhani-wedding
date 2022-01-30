@@ -166,7 +166,6 @@ $(document).ready(function () {
   $(function () {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      console.log(scroll);
       if (scroll >= 20) {
         $("section.navigation").addClass("fixed");
         $("header").css({
@@ -275,7 +274,7 @@ $(document).ready(function () {
       title: "Bhawana and Animesh's Wedding",
 
       // Event start date
-      start: new Date("Feb 05, 2017 10:00"),
+      start: new Date("Feb 05, 2022 10:00"),
 
       // Event duration (IN MINUTES)
       // duration: 120,
@@ -285,11 +284,11 @@ $(document).ready(function () {
       end: new Date("Feb 07, 2022 00:00"),
 
       // Event Address
-      address: "ITC Fortune Park Hotel, Kolkata",
+      address: "The Soaltee Hotel, Kathmandu",
 
       // Event Description
       description:
-        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210.",
+        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Khum Bahadur Kunwar at +977 9851254144 or Mrs. Rashmi Kunwar at +977 9851054144.",
     },
   });
 
@@ -368,7 +367,7 @@ function initMap() {
     center: location,
     scrollwheel: false,
   });
- 
+
   var marker = new google.maps.Marker({
     position: location,
     map: map,
