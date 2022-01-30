@@ -1104,6 +1104,22 @@ div.timer {
   font-weight: 600;
 }
 
+.event_wrap_1{
+  background: #fec5bb;
+}
+
+.event_wrap_2{
+  background: #fcd5ce;
+}
+
+.event_wrap_3{
+  background: #ffd7ba;
+}
+
+.event_wrap_4{
+  background: #fec89a;
+}
+
 #days {
   font-size: 50px;
   color: #183059;
