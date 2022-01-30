@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
   function makeTimer() {
     //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-    var endTime = new Date("05 Feburary 2022 9:56:00 GMT+01:00");
+    var endTime = new Date("05 Febraury 2022 9:56:00 GMT+05:45");
     if (new Date() > endTime) {
       $("#days").html(00 + "<span>Days</span>");
       $("#hours").html(00 + "<span>Hours</span>");
