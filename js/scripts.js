@@ -8,45 +8,45 @@ $(document).ready(function () {
       show: true,
     });
   });
-  function makeTimer() {
-    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-    var endTime = new Date("05 Febraury 2022 9:56:00 GMT+05:45");
-    if (new Date() > endTime) {
-      $("#days").html(00 + "<span>Days</span>");
-      $("#hours").html(00 + "<span>Hours</span>");
-      $("#minutes").html(00 + "<span>Mins</span>");
-      $("#seconds").html(00 + "<span>Secs</span>");
-      return;
-    }
-    endTime = Date.parse(endTime) / 1000;
+  // function makeTimer() {
+  //   //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+  //   var endTime = new Date("05 Febraury 2022 9:56:00 GMT+05:45");
+  //   if (new Date() > endTime) {
+  //     $("#days").html(00 + "<span>Days</span>");
+  //     $("#hours").html(00 + "<span>Hours</span>");
+  //     $("#minutes").html(00 + "<span>Mins</span>");
+  //     $("#seconds").html(00 + "<span>Secs</span>");
+  //     return;
+  //   }
+  //   endTime = Date.parse(endTime) / 1000;
 
-    var now = new Date();
-    now = Date.parse(now) / 1000;
+  //   var now = new Date();
+  //   now = Date.parse(now) / 1000;
 
-    var timeLeft = endTime - now;
+  //   var timeLeft = endTime - now;
 
-    var days = Math.floor(timeLeft / 86400);
-    var hours = Math.floor((timeLeft - days * 86400) / 3600);
-    var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
-    var seconds = Math.floor(
-      timeLeft - days * 86400 - hours * 3600 - minutes * 60
-    );
+  //   var days = Math.floor(timeLeft / 86400);
+  //   var hours = Math.floor((timeLeft - days * 86400) / 3600);
+  //   var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
+  //   var seconds = Math.floor(
+  //     timeLeft - days * 86400 - hours * 3600 - minutes * 60
+  //   );
 
-    if (hours < "10") {
-      hours = "0" + hours;
-    }
-    if (minutes < "10") {
-      minutes = "0" + minutes;
-    }
-    if (seconds < "10") {
-      seconds = "0" + seconds;
-    }
+  //   if (hours < "10") {
+  //     hours = "0" + hours;
+  //   }
+  //   if (minutes < "10") {
+  //     minutes = "0" + minutes;
+  //   }
+  //   if (seconds < "10") {
+  //     seconds = "0" + seconds;
+  //   }
 
-    $("#days").html(days + "<span>Days</span>");
-    $("#hours").html(hours + "<span>Hours</span>");
-    $("#minutes").html(minutes + "<span>Mins</span>");
-    $("#seconds").html(seconds + "<span>Secs</span>");
-  }
+  //   $("#days").html(days + "<span>Days</span>");
+  //   $("#hours").html(hours + "<span>Hours</span>");
+  //   $("#minutes").html(minutes + "<span>Mins</span>");
+  //   $("#seconds").html(seconds + "<span>Secs</span>");
+  // }
 
   setInterval(function () {
     makeTimer();
@@ -298,6 +298,7 @@ $(document).ready(function () {
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
     var data = $(this).serialize();
+    $("#btnSubmit").attr("disabled", true);
 
     $("#alert-wrapper").html(
       alert_markup(
@@ -316,9 +317,10 @@ $(document).ready(function () {
           "<strong>Sorry!</strong> Your invite code is incorrect."
         )
       );
+      $('#btnSubmit').removeAttr("disabled");
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbzzSWIjzJY_OhTy6-Eni2yPNj960BpqudJhc5b9UDnX3sKCuTQrwhBGjeNixiUFTmfG/exec",
+        "https://script.google.com/macros/s/AKfycbznR7oGtjvoLThLVrZmnN7OpDZdpfU5XtFj3qjFUz3iN2BK3hDnzxvojASH4bNwLPiP/exec",
         data
       )
         .done(function (data) {
@@ -338,6 +340,7 @@ $(document).ready(function () {
               "<strong>Sorry!</strong> There is some issue with the server. "
             )
           );
+          $('#btnSubmit').removeAttr("disabled");
         });
     }
   });
